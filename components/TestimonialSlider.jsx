@@ -13,7 +13,7 @@ const testimonialData = [
     name: "Sarah L",
     position: "Marketing Manager",
     message:
-      "Working with Jaybie was a game-changer. He transformed our outdated website into a modern and responsive platform",
+      "Working with Jaybie was a game-changer. He transformed our outdated website into a modern and responsive platform.",
   },
   {
     image: "/t-avt-2.png",
