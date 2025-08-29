@@ -25,8 +25,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full bg-primary/30">
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+    <div className="h-full bg-primary/30 min-h-screen flex items-center">
+      <div className="container mx-auto py-16 sm:py-20 lg:py-24 xl:py-32 text-center xl:text-left flex items-center justify-center px-4 sm:px-6 lg:px-8">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
@@ -35,7 +35,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
+            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mb-8 sm:mb-10 lg:mb-12"
           >
             Let's <span className="text-accent">connect.</span>
           </motion.h2>
@@ -46,7 +46,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto"
+            className="flex-1 flex flex-col gap-4 sm:gap-5 lg:gap-6 w-full mx-auto"
             onSubmit={handleSubmit}
             autoComplete="off"
             autoCapitalize="off"
@@ -54,12 +54,12 @@ const Contact = () => {
             data-netlify="true"
           >
             {/* input group */}
-            <div className="flex gap-x-6 w-full">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-6 w-full">
               <input
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="input"
+                className="input flex-1"
                 disabled={isLoading}
                 aria-disabled={isLoading}
                 required
@@ -69,7 +69,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                className="input"
+                className="input flex-1"
                 disabled={isLoading}
                 aria-disabled={isLoading}
                 required
@@ -89,7 +89,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Message..."
-              className="textarea"
+              className="textarea min-h-[120px] sm:min-h-[140px] lg:min-h-[160px]"
               disabled={isLoading}
               aria-disabled={isLoading}
               required
@@ -97,16 +97,16 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              className="btn rounded-full border border-white/50 max-w-[170px] mx-auto xl:mx-0 px-6 sm:px-8 py-3 sm:py-4 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group text-sm sm:text-base"
               disabled={isLoading}
               aria-disabled={isLoading}
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Let's talk
+                {isLoading ? "Sending..." : "Let's talk"}
               </span>
 
               <BsArrowRight
-                className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
+                className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[18px] sm:text-[22px]"
                 aria-hidden
               />
             </button>

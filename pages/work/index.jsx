@@ -7,10 +7,10 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="h-full bg-primary/30 py-16 sm:py-20 lg:py-24 xl:py-36 flex items-center px-4 sm:px-6 lg:px-8 xl:px-0">
       <Circles />
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-x-8">
+        <div className="flex flex-col xl:flex-row gap-x-8 gap-y-8 xl:gap-y-0">
           {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
@@ -18,7 +18,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-12"
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 xl:mt-12"
             >
               My work <span className="text-accent">.</span>
             </motion.h2>
@@ -27,10 +27,9 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 sm:mb-6 max-w-[400px] mx-auto lg:mx-0 text-sm sm:text-base lg:text-lg"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              A collection of projects that showcase my skills in design and development. Each piece reflects my focus on creativity, functionality, and bringing ideas to life through digital experiences.
             </motion.p>
           </div>
 

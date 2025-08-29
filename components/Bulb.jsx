@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Bulb = () => {
   return (
-    <div className="absolute -left-36 -bottom-12 rotate-12 mix-blend-color-dodge animate-pulse duration-75 z-10 w-[200px] xl:w-[260px] select-none pointer-events-none">
+    <div className="absolute -left-20 -bottom-8 sm:-left-28 sm:-bottom-10 xl:-left-36 xl:-bottom-12 rotate-12 mix-blend-color-dodge animate-pulse duration-75 z-10 w-[120px] sm:w-[160px] lg:w-[200px] xl:w-[260px] select-none pointer-events-none">
       <Image
         src="/bulb.png"
         alt="bulb"

@@ -15,21 +15,22 @@ const sora = Sora({
 const Layout = ({ children }) => {
   return (
     <main
-      className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
+      className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative min-h-screen`}
     >
       {/* metadata */}
       <Head>
-        <title>Ethan Smith | Portfolio</title>
+        <title>Jaybie | Portfolio</title>
         <meta
           name="description"
-          content="Ethan Smith is a Full-stack web developer with 10+ years of experience."
+          content="Jaybie is a Full-stack web developer with 3+ years of experience."
         />
         <meta
           name="keywords"
           content="react, next, nextjs, html, css, javascript, js, modern-ui, modern-ux, portfolio, framer-motion, 3d-website, particle-effect"
         />
-        <meta name="author" content="Sanidhya Kumar Verma" />
+        <meta name="author" content="Jaybie" />
         <meta name="theme-color" content="#f13024" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <TopLeftImg />
@@ -37,7 +38,9 @@ const Layout = ({ children }) => {
       <Header />
 
       {/* main content */}
-      {children}
+      <div className="pt-20 sm:pt-24 lg:pt-28 xl:pt-0">
+        {children}
+      </div>
     </main>
   );
 };

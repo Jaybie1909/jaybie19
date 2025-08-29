@@ -13,49 +13,40 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
+          title: "E-commerce Platform",
+          path: "/urban.jpg",
+          link: "https://www.urbanathletics.com.ph",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
+          title: "Cleaning Service Booking",
+          path: "/getklean.jpg",
+          link: "https://www.getkleanph.com/",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
+          title: "Car Rental System",
+          path: "/8drive.jpg",
+          link: "https://8drivecars.com/",
         },
         {
-          title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
+          title: "Dental Clinic Website",
+          path: "/dentalworld.jpg",
+          link: "https://dentalworld.com.ph/",
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
+          title: "Car Dealer Inventory",
+          path: "/manilaauto.jpg",
+          link: "https://www.manilaautodisplay.com/",
         },
         {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
+          title: "Education Learning Portal",
+          path: "/ahalearning.jpg",
+          link: "https://www.ahalearningcenter.com/",
         },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
-        },
+        
       ],
     },
   ],

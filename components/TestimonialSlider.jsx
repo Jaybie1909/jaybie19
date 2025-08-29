@@ -10,24 +10,24 @@ import "swiper/css/pagination";
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    name: "Sarah L",
+    position: "Marketing Manager",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Working with Jaybie was a game-changer. He transformed our outdated website into a modern, responsive platform that boosted our customer engagement instantly",
   },
   {
     image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    name: "Michael R",
+    position: "Startup Founder",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Jaybie has an incredible eye for design and detail. The new branding he created not only looks amazing but truly represents our company’s identity.",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    name: "John Smith",
+    position: "Business Owner",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Fast, reliable, and highly skilled. From development to SEO, Jaybie handled everything seamlessly. I couldn’t have asked for a better experience.",
   },
 ];
 

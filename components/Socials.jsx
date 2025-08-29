@@ -37,14 +37,14 @@ export const socialData = [
   },
   {
     name: "Github",
-    link: "https://github.com/sanidhyy/modern-portfolio",
+    link: "https://github.com/jaybie1909",
     Icon: RiGithubLine,
   },
 ];
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-lg">
+    <div className="flex items-center gap-x-3 sm:gap-x-4 lg:gap-x-5 text-base sm:text-lg">
       {socialData.map((social, i) => (
         <Link
           key={i}
@@ -54,9 +54,9 @@ const Socials = () => {
           rel="noreferrer noopener"
           className={`${
             social.name === "Github"
-              ? "bg-accent rounded-full p-[5px] hover:text-white"
+              ? "bg-accent rounded-full p-[4px] sm:p-[5px] hover:text-white"
               : "hover:text-accent"
-          } transition-all duration-300`}
+          } transition-all duration-300 p-1 sm:p-2`}
         >
           <social.Icon aria-hidden />
           <span className="sr-only">{social.name}</span>
